@@ -182,6 +182,14 @@ type variableProperties struct {
 			Host_required   []string
 			Target_required []string
 		}
+		CameraSupportVirtual struct {
+			Cflags          []string
+			Cppflags        []string
+			Init_rc         []string
+			Required        []string
+			Host_required   []string
+			Target_required []string
+		}
 		CameraSupportHDMISubVideo struct {
 			Cflags          []string
 			Cppflags        []string
@@ -327,6 +335,7 @@ type productVariables struct {
 	CameraWithOutGralloc4        *bool    `json:",omitempty"`
 	CameraSupportHDMI            *bool    `json:",omitempty"`
 	CameraSupportHDMISubVideo    *bool    `json:",omitempty"`
+	CameraSupportVirtual         *bool    `json:",omitempty"`
 	CameraSupportSubDevice       *bool    `json:",omitempty"`
 	CameraSupportOSD             *bool    `json:",omitempty"`
 	Treble_linker_namespaces     *bool    `json:",omitempty"`
